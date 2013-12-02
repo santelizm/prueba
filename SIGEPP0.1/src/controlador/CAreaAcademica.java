@@ -30,18 +30,7 @@ import componentes.Catalogo;
 @Controller
 public class CAreaAcademica extends CGenerico {
 
-	@Wire
-	private Textbox txtNombreAreaAcademica;
-	@Wire
-	private Textbox txtDescripcionAreaAcademica;
-	@Wire
-	private Textbox txtIdAreaAcademica;
-	@Wire
-	private Combobox cmbDepartamento;
-	@Wire
-	private Listbox listaAreaAcademica;
-	@Wire
-	private Button btnBuscarArea;
+	
 
 	@Wire
 	private Div botoneraEstandar;
