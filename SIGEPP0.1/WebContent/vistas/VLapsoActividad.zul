@@ -1,0 +1,28 @@
+<zk>
+	<div class="general" apply="controlador.CLapsoActividad">
+		<groupbox width="45em">
+			<grid width="100%">
+				<auxhead>
+					<auxheader label="Registrar Lapso Actividad"
+						colspan="6" />
+				</auxhead>
+				<columns />
+				<rows>
+					<row>
+						<label class="etiqueta" value="Nombre:" />
+						<textbox id="txtNombreLapsoActividad" hflex="1"
+							constraint="no empty" />
+							<button id="btnBuscarLapsoActividad"
+							label="Buscar" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Descripcion:" />
+						<textbox id="txtDescripcionLapsoActividad"
+							constraint="no empty" multiline="true" width="100%" />
+					</row>
+				</rows>
+			</grid>
+			<div id="botoneraEstandar"></div>
+		</groupbox>
+	</div>
+</zk>

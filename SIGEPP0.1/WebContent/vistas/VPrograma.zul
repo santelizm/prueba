@@ -1,0 +1,54 @@
+<zk>
+	<div class="general" apply="controlador.CPrograma">
+		<groupbox width="45em">
+			<grid width="100%">
+				<auxhead>
+					<auxheader label="Programa" colspan="6" />
+				</auxhead>
+				<columns />
+				<rows>
+				<row>
+						<label class="etiqueta" value="id:" visible="false"/>
+						<textbox id="txtIdPrograma" hflex="1" visible="false"/>
+						
+					</row>
+					<row>
+						<label class="etiqueta" value="Nombre:" />
+						<textbox id="txtNombrePrograma" hflex="1"/>
+						<button id="btnBuscarPrograma" label="Buscar" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Descripcion:" />
+						<textbox id="txtDescripcionPrograma" hflex="1"
+						    multiline="true" width="100%" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Telefono:" />
+						<textbox id="txtTelefonoPrograma" hflex="1"/>
+					</row>
+				</rows>
+			</grid>
+			<div id="botoneraEstandar"></div>
+			<div id="catalogoPrograma">
+			
+			<listbox id="listaPrograma" height="160px" emptyMessage="No hay Programas registrados">
+		
+		<listhead>
+		    <listheader label="Nombre" />
+			<listheader label="Descripcion" />
+			<listheader label="Telefono" />			
+		</listhead>
+		<template  name="model">
+			<listitem selected="true">
+			    <listcell label="${each.nombre}"></listcell>
+				<listcell label="${each.descripcion}"></listcell>
+				<listcell label="${each.telefono}"></listcell>
+			</listitem>
+		</template>
+	</listbox>
+	
+			
+			</div>
+		</groupbox>
+	</div>
+</zk>

@@ -1,0 +1,71 @@
+<zk>
+	<div class="general" apply="controlador.CEmpresa">
+		<groupbox width="45em">
+			<grid width="100%">
+				<auxhead>
+					<auxheader label="Empresa" colspan="6" />
+
+				</auxhead>
+				<columns />
+				<rows>
+					<row>
+						<label class="etiqueta" value="RIF:" />
+						<textbox id="txtRifEmpresa" hflex="1"
+							constraint="no empty" />
+							<button id="btnBuscarEmpresa" label="Buscar" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Nombre:" />
+						<textbox id="txtNombreEmpresa" hflex="1"
+							constraint="no empty" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Direccion 1:" />
+						<textbox id="txtDireccion1Empresa" hflex="1"
+							constraint="no empty" multiline="true" width="100%" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Direccion 2:" />
+						<textbox id="txtDireccion2Empresa" hflex="1"
+							constraint="no empty" multiline="true" width="100%" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Telefono Local:" />
+						<textbox id="txtTelefonolocalEmpresa" hflex="1"
+							constraint="no empty" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Telefono Movil:" />
+						<textbox id="txtTelefonoMovilEmpresa" hflex="1"
+							constraint="no empty" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Correo 1:" />
+
+						<textbox id="txtCorreo1Empresa" hflex="1"
+							constraint="no empty" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Correo 2:" />
+
+						<textbox id="txtCorreo2Empresa" hflex="1"
+							constraint="no empty" />
+					</row>
+					<row>
+						<label class="etiqueta"
+							value="Nombre Persona de Contacto:" />
+						<textbox id="txtNombreContacto" hflex="1"
+							constraint="no empty" />
+					</row>
+					<row>
+						<label class="etiqueta"
+							value="Telefono de Contacto:" />
+						<textbox id="txtTelefonoContacto" hflex="1"
+							constraint="no empty" />
+					</row>
+				</rows>
+			</grid>
+			<div id="botoneraEstandar"></div>
+		</groupbox>
+	</div>
+</zk>

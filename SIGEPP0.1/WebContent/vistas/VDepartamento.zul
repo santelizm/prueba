@@ -1,0 +1,27 @@
+<zk>
+	<div class="general" apply="controlador.CDepartamento">
+		<groupbox width="45em">
+			<grid width="100%">
+				<auxhead>
+					<auxheader label="Registrar Departamento"
+						colspan="6" />
+				</auxhead>
+				<columns />
+				<rows>
+					<row>
+						<label class="etiqueta" value="Nombre:" />
+						<textbox id="txtNombreDepartamento" hflex="1"
+							constraint="no empty" />
+							<button id="btnBuscarDepartamento" label="Buscar" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Descripcion:" />
+						<textbox id="txtDescripcionDepartamento" hflex="1"
+							constraint="no empty" multiline="true" width="100%" />
+					</row>
+				</rows>
+			</grid>
+			<div id="botoneraEstandar"></div>
+		</groupbox>
+	</div>
+</zk>

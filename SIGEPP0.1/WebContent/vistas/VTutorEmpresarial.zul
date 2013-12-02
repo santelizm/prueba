@@ -1,0 +1,86 @@
+<zk>
+	<div class="general" apply="controlador.CTutorEmpresarial">
+		<groupbox width="45em">
+			<grid width="100%">
+				<auxhead>
+					<auxheader label="Registro Tutor Empresarial"
+						colspan="6" image="..src/imagenes/registo.png" />
+				</auxhead>
+				<columns />
+				<rows>
+					<row>
+						<label class="etiqueta" value="Cedula:" />
+						<hbox>
+							<radiogroup
+								id="rdbTipoCedulaTutorEmpresarial">
+								<radio label="V" value="venezolano" />
+								<radio label="E" value="extranjero" />
+							</radiogroup>
+							<textbox id="txtCedulaTutorEmpresarial"
+								hflex="1" constraint="no empty" />
+						</hbox>
+							<button id="btnBuscarTutorEmpresarial"
+							label="Buscar" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Primer Nombre:" />
+						<textbox id="txtNombre1TutorEmpresarial"
+							hflex="1" constraint="no empty" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Segundo Nombre:" />
+						<textbox id="txtNombre2TutorEmpresarial"
+							hflex="2" />
+					</row>
+					<row>
+						<label class="etiqueta"
+							value="Primer Apellido:" />
+						<textbox id="txtApellido1TutorEmpresarial"
+							hflex="1" constraint="no empty" />
+					</row>
+					<row>
+						<label class="etiqueta"
+							value="Segundo Apellido:" />
+						<textbox id="txtApellido2TutorEmpresarial"
+							hflex="1" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Sexo:" />
+
+						<radiogroup id="rdbSexoTutorEmpresarial">
+							<radio label="Femenino" value="femenino" />
+							<radio label="Masculino" value="Masculino" />
+						</radiogroup>
+					</row>
+					<row>
+						<label class="etiqueta"
+							value="Correo Electronico:" />
+						<textbox id="txtCorreoTutorEmpresarial"
+							hflex="1"
+							constraint="/.+@.+\.[a-z]+/: Por favor ingresar correo" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Telefono1:" />
+						<intbox id="txtTelefono1TutorEmpresarial"
+							hflex="1" constraint="no empty" />
+					</row>
+					<row>
+						<label class="etiqueta" value="Telefono2:" />
+						<intbox id="txtTelefono2TutorEmpresarial"
+							hflex="1" constraint="no empty" />
+					</row>
+					<row>
+					<label class="etiqueta" value="Empresa:" />
+						<combobox id="cmbEmpresa" readonly="true"
+							width="100%">
+							<comboitem label="Desica C.A." />
+							<comboitem label="Tubrica" />
+							
+						</combobox>
+					</row>
+				</rows>
+			</grid>
+			<div id="botoneraEstandar"></div>
+		</groupbox>
+	</div>
+</zk>
